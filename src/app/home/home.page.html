@@ -1,20 +1,37 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<!-- grid menu dento de un card-->
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+ <ion-card >
+    <ion-grid>
+        <ion-row class="ion-text-center">
+            <ion-col size="4" routerLink="/proyecto">
+                <ion-icon name="layers" color="warning" size="large"></ion-icon>
+                <p>Proyecto</p>
+            </ion-col>
+            <ion-col size="4" routerLink="/registro">
+                <ion-icon name="documents" color="warning" size="large"></ion-icon>
+                <p>Registro</p>
+            </ion-col>
+            <ion-col size="4" routerLink="/mensajeria">
+                <ion-icon name="mail" color="warning" size="large"></ion-icon>
+                <p>Mensajeria</p>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+  
+    <ion-grid>
+      <ion-row class="ion-text-center">
+          <ion-col size="4" routerLink="/archivo">
+              <ion-icon name="folder-open" color="warning" size="large"></ion-icon>
+              <p>Archivo</p>
+          </ion-col>
+          <ion-col size="4" routerLink="/formulario">
+              <ion-icon name="document-text" color="warning" size="large"></ion-icon>
+              <p>Formulario</p>
+          </ion-col>
+          <ion-col size="4" routerLink="/login">
+              <ion-icon name="locate" color="warning" size="large"></ion-icon>
+              <p>Objetivo</p>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+  </ion-card>
